@@ -36,3 +36,15 @@ services:
     depends_on:
       - mysql_reclamation
       - Eureka
+
+  blogforum:
+    container_name: blogforum
+    build: .\Spirng - Blog
+    ports:
+      - "8802:8802"
+    hostname: reclamation
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka/
+    image: "blogforum"
+    depends_on:
+      - Eureka
