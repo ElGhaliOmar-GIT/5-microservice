@@ -1,15 +1,15 @@
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\BnsApplication.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\serviceInterface\khalil\IOfferService.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\controller\khalil\OfferRestController.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\Offer.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\BadWord.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\repository\khalil\ClaimRepository.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\service\khalil\ClaimServiceImpl.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\serviceInterface\khalil\IClaimService.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\repository\khalil\OfferRepository.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\service\khalil\OfferServiceImpl.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\controller\khalil\ClaimRestController.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\Claim.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\BusinessType.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\ClaimSubject.java
-D:\5sae4 projects\condidat\Candidat-MS\src\main\java\tn\esprit\pidev\bns\entity\khalil\SMS.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\serviceInterface\siwar\IClaimService.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\Claim.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\ClaimSubject.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\BnsApplication.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\controller\siwar\OfferRestController.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\repository\siwar\OfferRepository.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\SMS.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\repository\siwar\ClaimRepository.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\BadWord.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\Offer.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\controller\siwar\ClaimRestController.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\service\siwar\ClaimServiceImpl.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\service\siwar\OfferServiceImpl.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\entity\siwar\BusinessType.java
+D:\Studies\Esprit\5eme\5.1\Application Web\Project\Project\Spring - Reclamation\src\main\java\tn\esprit\pidev\bns\serviceInterface\siwar\IOfferService.java

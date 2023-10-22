@@ -128,7 +128,7 @@
 				<version>2.7.16</version>
 			</plugin>
 		</plugins>
-		<finalName>product</finalName>
+		<finalName>productDocker</finalName>
 	</build>
 
 </project>

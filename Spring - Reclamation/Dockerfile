@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8089
-ADD target/dockertest.jar dockertest.jar
-ENTRYPOINT ["java", "-jar", "dockertest.jar"]
+EXPOSE 8801
+ADD target/reclamationDocker.jar reclamationDocker.jar
+ENTRYPOINT ["java", "-jar", "reclamationDocker.jar"]
