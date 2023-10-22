@@ -53,7 +53,7 @@ public class OfferRestController {
     @GetMapping("/downloadOfferList")
     public ResponseEntity<byte[]> downloadOffers() throws IOException {
         List<Offer> offers = OfferService.getAllOffers();
-        String filePath = "C:\\Users\\USER\\Downloads\\offers.xlsx";
+        String filePath = "C:\\Users\\elgha\\Downloads\\offers.xlsx";
         OfferService.createExcelFile(offers, filePath);
         byte[] excelBytes = Files.readAllBytes(Paths.get(filePath));
         HttpHeaders headers = new HttpHeaders();

@@ -43,9 +43,9 @@ public class OfferServiceImpl implements IOfferService {
 
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(587);
-        email.setAuthentication("khalil.turki@esprit.tn", "apriliaSR50");
+        email.setAuthentication("siwar.dhrif@esprit.tn", "siwardhrif12345");
         email.setStartTLSEnabled(true);
-        email.addTo("khalil.turki@esprit.tn");
+        email.addTo("siwar.dhrif@esprit.tn");
         email.setFrom("ss@sss.com");
         System.out.println(offer.getBusinessEmail()) ;
         email.setSubject("APPEL D'OFFRE");
@@ -97,7 +97,7 @@ public class OfferServiceImpl implements IOfferService {
             row.createCell(4).setCellValue(offer.getBusinessEmail());
 
             Date datestart = offer.getStartDate() ;
-            SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd") ;
+            SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
             String formatedstardate = dateformat.format(datestart) ;
 
             row.createCell(5).setCellValue(formatedstardate);
