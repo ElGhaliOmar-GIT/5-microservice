@@ -4,7 +4,6 @@ import com.maxmind.geoip2.exception.GeoIp2Exception;
 import tn.esprit.pidev.bns.entity.hadir.ConversionCurrency;
 import tn.esprit.pidev.bns.entity.hadir.Currency;
 import tn.esprit.pidev.bns.entity.hadir.Product;
-import tn.esprit.pidev.bns.entity.hadir.Tva;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;

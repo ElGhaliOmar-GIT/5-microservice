@@ -1,9 +1,6 @@
 package tn.esprit.pidev.bns.service.hadir;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONArray;
-import org.springframework.boot.configurationprocessor.json.JSONException;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.stereotype.Service;
 import tn.esprit.pidev.bns.entity.hadir.Product;
 import tn.esprit.pidev.bns.entity.hadir.Shop;
@@ -14,11 +11,6 @@ import tn.esprit.pidev.bns.repository.hadir.TvaRep;
 import tn.esprit.pidev.bns.serviceInterface.hadir.IShopService;
 
 import javax.persistence.EntityNotFoundException;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.*;
 
 @Service
@@ -71,39 +63,6 @@ public class ShopService implements IShopService {
         shopRep.save(shop);
         return shop;
 
-    }
-
-    @Override
-    public List <String> getLocation(String address) throws IOException, JSONException {
-
-        URL url = new URL("https://nominatim.openstreetmap.org/search?q=" + address
-                + "&format=json&addressdetails=1&limit=1");
-
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-        connection.setRequestMethod("GET");
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-
-        String inputLine;
-        StringBuilder response = new StringBuilder();
-
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
-
-
-        List<String> coordinates = new ArrayList<>();
-        JSONArray jsonArray = new JSONArray(response.toString());
-
-        JSONObject jsonObject = jsonArray.getJSONObject(0);
-
-        String latitude = jsonObject.getString("lat");
-        String longitude = jsonObject.getString("lon");
-        coordinates.add(latitude + ", " + longitude);
-
-        return coordinates;
     }
 
     @Override

@@ -3,14 +3,10 @@ package tn.esprit.pidev.bns.service.hadir;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CityResponse;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 import org.webjars.NotFoundException;
 import tn.esprit.pidev.bns.client.ExchangeRateClient;
-import tn.esprit.pidev.bns.client.Rates;
 import tn.esprit.pidev.bns.entity.hadir.*;
 import tn.esprit.pidev.bns.entity.hadir.Currency;
 import tn.esprit.pidev.bns.repository.hadir.*;
@@ -20,11 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Service
@@ -128,7 +119,7 @@ public class ProductService implements IProductService {
     @Override
     public Map<String, String> getClientLocation(HttpServletRequest request) throws IOException, GeoIp2Exception {
         String clientIp = categorieService.getClientIp(request);
-        File database = new File("C:/GeoLite2-City.mmdb");
+        File database = new File("../resources/GeoLite2-City.mmdb");
         DatabaseReader reader = new DatabaseReader.Builder(database).build();
         InetAddress ipAddress = InetAddress.getByName(clientIp);
         CityResponse response = reader.city(ipAddress);

@@ -3,7 +3,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import tn.esprit.pidev.bns.entity.hadir.Tva;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface TvaRep extends JpaRepository<Tva,Integer> {

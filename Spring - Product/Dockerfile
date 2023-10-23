@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8805
-ADD target/productDocker.jar productDocker.jar
-ENTRYPOINT ["java", "-jar", "productDocker.jar"]
+ADD target/productt.jar productt.jar
+ENTRYPOINT ["java", "-jar", "productt.jar"]

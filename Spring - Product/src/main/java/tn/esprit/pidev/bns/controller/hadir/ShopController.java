@@ -2,16 +2,12 @@ package tn.esprit.pidev.bns.controller.hadir;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONException;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.pidev.bns.entity.hadir.Shop;
 import tn.esprit.pidev.bns.entity.hadir.Tva;
 import tn.esprit.pidev.bns.repository.hadir.ShopRep;
 import tn.esprit.pidev.bns.serviceInterface.hadir.IShopService;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -52,21 +48,6 @@ public class ShopController {
         return shopService.affecterProductToShop(idBoutique, idProduits);
     }
 
-    @GetMapping("/shop/location")
-    public List<String>  getLocation(@RequestParam(name = "address", required = false)String address) throws IOException, JSONException {
-        return shopService.getLocation(address);
-    }
-    @GetMapping("/shops/locations")
-    public List<String> getShopsLocations(@RequestParam("name") String name) throws IOException, JSONException {
-        List<Shop> shops = shopRep.findByName(name);
-        List<String> coordinates = new ArrayList<>();
-        for (Shop shop : shops) {
-            String address = shop.getAddress().replace(" ", "+");
-            List<String> shopCoordinates = getLocation(address);
-            coordinates.addAll(shopCoordinates);
-        }
-        return coordinates;
-    }
     @GetMapping("/beneficeBrut/{shop-id}")
     @ResponseBody
     public double beneficeBrut(@PathVariable("shop-id")int ids)

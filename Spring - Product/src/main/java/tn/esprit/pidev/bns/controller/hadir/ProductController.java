@@ -1,35 +1,18 @@
 package tn.esprit.pidev.bns.controller.hadir;
 
-import com.fasterxml.jackson.core.JsonParser;
-import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
-import com.maxmind.geoip2.model.CityResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.jackson.JsonObjectDeserializer;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 import tn.esprit.pidev.bns.entity.hadir.*;
 import tn.esprit.pidev.bns.entity.hadir.Currency;
 import tn.esprit.pidev.bns.repository.hadir.ProductRep;
 import tn.esprit.pidev.bns.serviceInterface.hadir.IProductService;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.InetAddress;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.UnknownHostException;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @RestController

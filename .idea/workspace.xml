@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa33199f-930a-48ca-ad37-aea538ec056d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Spring - Product/Database/Data/Candidat.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/Database/Data/Candidat.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/Database/Data/Candidats.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/Database/Data/Candidats.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/controller/hadir/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/controller/hadir/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/controller/hadir/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/controller/hadir/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/entity/hadir/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/entity/hadir/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/entity/hadir/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/entity/hadir/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/CurrencyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/CurrencyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/ProductRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/ProductRep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/ShopRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/ShopRep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/TvaRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/repository/hadir/TvaRep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/service/hadir/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/service/hadir/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/service/hadir/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/service/hadir/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/serviceInterface/hadir/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/serviceInterface/hadir/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/serviceInterface/hadir/IShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/src/main/java/tn/esprit/pidev/bns/serviceInterface/hadir/IShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/controller/hadir/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/controller/hadir/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/controller/hadir/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/controller/hadir/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Shop$ShopBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Shop$ShopBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/entity/hadir/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/service/hadir/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/service/hadir/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/service/hadir/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/service/hadir/ShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/serviceInterface/hadir/IShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Spring - Product/target/classes/tn/esprit/pidev/bns/serviceInterface/hadir/IShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2X8t2V92xDf4GQueiyuK3Q2CTEK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa33199f-930a-48ca-ad37-aea538ec056d" name="Changes" comment="" />
+      <created>1698022337635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698022337635</updated>
+      <workItem from="1698022341315" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

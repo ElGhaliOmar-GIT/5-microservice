@@ -33,7 +33,6 @@ public class EventCommService implements IEventCommService {
         Event event = eventRepo.findById(idEvent).orElseThrow(() -> new EntityNotFoundException("evenement non trouvée"));
         event.getEventCommentList().add(comment);
         comment.setEventId(idEvent);
-        eventRepo.save(event);
         return commRepo.save(comment);
     }
 
