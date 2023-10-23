@@ -7,6 +7,24 @@ services:
       - "8761:8761"
     hostname: serviceregistry
     image: "eureka"
+  
+  gateway_v1:
+    container_name: gateway_v1
+    build: .\Gateway
+    ports:
+      - "8809:8809"
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka/
+    hostname: gateway_v1
+    image: "gateway_v1"
+    depends_on:
+      - Eureka
+      - reclamation_v1
+      - delivery
+      - product_v1
+      - blogforum
+      - eventt
+      - node_api
     
   mysql_reclamation:
     image: "mysql:5.6"
@@ -21,18 +39,18 @@ services:
       timeout: 20s
       retries: 10
 
-  Reclamation:
-    container_name: reclamation
+  reclamation_v1:
+    container_name: reclamation_v1
     build: .\Spring - Reclamation
     ports:
       - "8801:8801"
-    hostname: reclamation
+    hostname: reclamation_v1
     environment:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka/
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_reclamation:3306/reclamation?useUnicode=true&useJDBCCompliantTimezoneShift=true&createDatabaseIfNotExist=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=
-    image: "reclamation"
+    image: "reclamation_v1"
     depends_on:
       - mysql_reclamation
       - Eureka
@@ -100,7 +118,7 @@ services:
     build: .\Spirng - Blog
     ports:
       - "8802:8802"
-    hostname: reclamation
+    hostname: blogforum
     environment:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka/
     image: "blogforum"

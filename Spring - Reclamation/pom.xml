@@ -119,7 +119,7 @@
 				<version>2.7.16</version>
 			</plugin>
 		</plugins>
-		<finalName>reclamationDocker</finalName>
+		<finalName>reclamation_v1</finalName>
 	</build>
 
 </project>
