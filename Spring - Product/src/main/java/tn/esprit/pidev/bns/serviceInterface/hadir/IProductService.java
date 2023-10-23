@@ -26,8 +26,4 @@ public interface IProductService {
     public Product retrieveProduct(Integer idProduct);
 
     public boolean removeProduct(Integer idProduct);
-    //String getClientIp(HttpServletRequest request);
-    public Map<String, String> getClientLocation(HttpServletRequest request) throws IOException, GeoIp2Exception;
-    // public  void affcterProductToShop(Integer idShop, Integer idProduct);
-
 }

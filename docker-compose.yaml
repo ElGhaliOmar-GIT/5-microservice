@@ -79,18 +79,18 @@ services:
       timeout: 20s
       retries: 10
 
-  productt:
-    container_name: productt
+  product_v1:
+    container_name: product_v1
     build: .\Spring - Product
     ports:
       - "8805:8805"
-    hostname: productt
+    hostname: product_v1
     environment:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://serviceregistry:8761/eureka/
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_product:3306/product?useUnicode=true&useJDBCCompliantTimezoneShift=true&createDatabaseIfNotExist=true&useLegacyDatetimeCode=false&serverTimezone=UTC
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=
-    image: "productt"
+    image: "product_v1"
     depends_on:
       - mysql_product
       - Eureka

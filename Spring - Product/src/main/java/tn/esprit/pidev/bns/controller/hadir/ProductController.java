@@ -24,20 +24,8 @@ public class ProductController {
     ProductRep productRep;
 
     @GetMapping("/retrieve-all-Products")
-    public List<Product> getProducts(@RequestParam(name = "currency", required = false)String currency,HttpServletRequest request) throws IOException, GeoIp2Exception {
-        Map<String, String> location = productService.getClientLocation(request);
-        String DeviseLoc = location.get("DeviseLoc");
-        List<Product> listProducts = productService.retrieveAllProducts();
-        if (currency != null) {
-            for(Product product : listProducts) {
-                ConversionCurrency convCurr = new ConversionCurrency();
-                convCurr.setFrom(DeviseLoc);
-                convCurr.setTo(currency);
-                convCurr.setValue(product.getPrice());
-                product.setPrice(convertCurrencies(convCurr).getBody());
-            }
-        }
-        return listProducts;
+    public List<Product> getProducts() {
+        return productService.retrieveAllProducts();
     }
 
     @GetMapping("/retrieve-Product/{product-id}")
@@ -101,11 +89,4 @@ public class ProductController {
         productpromotion.setPrice(newprice);
         productService.updateProduct(productpromotion);
     }
-    @GetMapping("/client-location")
-    public Map<String, String> getClientLocation(HttpServletRequest request) throws IOException, GeoIp2Exception {
-
-        return productService.getClientLocation(request);
-    }
-
-
 }
