@@ -1,0 +1,74 @@
+server:
+  port: 8809
+
+spring:
+  application:
+    name: gateway_v2
+
+  cloud:
+    gateway:
+      routes:
+        - id: events
+          uri: lb://eventv1
+          predicates:
+            - Path=/events/**
+        - id: comments
+          uri: lb://eventv1
+          predicates:
+            - Path=/comments/**
+        - id: Blog
+          uri: lb://blogforum
+          predicates:
+            - Path=/Blog/**
+        - id: forum
+          uri: lb://blogforum
+          predicates:
+            - Path=/forum/**
+        - id: Comment
+          uri: lb://blogforum
+          predicates:
+            - Path=/Comment/**
+        - id: OrderController
+          uri: lb://deliveryorder
+          predicates:
+            - Path=/OrderController/**
+        - id: DeliveryController
+          uri: lb://deliveryorder
+          predicates:
+            - Path=/DeliveryController/**
+        - id: CommandeLineController
+          uri: lb://deliveryorder
+          predicates:
+            - Path=/CommandeLineController/**
+        - id: CartController
+          uri: lb://deliveryorder
+          predicates:
+            - Path=/CartController/**
+        - id: Product
+          uri: lb://productshop
+          predicates:
+            - Path=/Product/**
+        - id: Shop
+          uri: lb://productshop
+          predicates:
+            - Path=/Shop/**
+        - id: Category
+          uri: lb://productshop
+          predicates:
+            - Path=/Category/**
+        - id: claim
+          uri: lb://reclamationoffre
+          predicates:
+            - Path=/claim/**
+        - id: offer
+          uri: lb://reclamationoffre
+          predicates:
+            - Path=/offer/**
+        - id: api
+          uri: lb://Microservice-Nodejs-service
+          predicates:
+            - Path=/api/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

@@ -52,7 +52,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>gateway_v1</finalName>
+        <finalName>gateway_v2</finalName>
     </build>
 
 </project>

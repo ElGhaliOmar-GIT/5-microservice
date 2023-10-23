@@ -155,7 +155,7 @@
 				<version>2.7.16</version>
 			</plugin>
 		</plugins>
-		<finalName>delivery</finalName>
+		<finalName>deliveryorder</finalName>
 	</build>
 
 </project>

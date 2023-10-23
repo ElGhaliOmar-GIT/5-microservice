@@ -119,7 +119,7 @@
 				<version>2.7.16</version>
 			</plugin>
 		</plugins>
-		<finalName>reclamation_v1</finalName>
+		<finalName>reclamationoffre</finalName>
 	</build>
 
 </project>

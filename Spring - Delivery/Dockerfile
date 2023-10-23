@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8804
-ADD target/delivery.jar delivery.jar
-ENTRYPOINT ["java", "-jar", "delivery.jar"]
+ADD target/deliveryorder.jar deliveryorder.jar
+ENTRYPOINT ["java", "-jar", "deliveryorder.jar"]

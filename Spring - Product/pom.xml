@@ -123,7 +123,7 @@
 				<version>2.7.16</version>
 			</plugin>
 		</plugins>
-		<finalName>product_v1</finalName>
+		<finalName>productshop</finalName>
 	</build>
 
 </project>

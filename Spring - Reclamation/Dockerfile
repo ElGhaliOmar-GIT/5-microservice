@@ -4,7 +4,7 @@ FROM openjdk:8
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/reclamation_v1.jar reclamation_v1.jar
+COPY target/reclamationoffre.jar reclamationoffre.jar
 
 # Copy the "resources" directory into the container
 COPY src/main/resources/ resources/
@@ -13,4 +13,4 @@ COPY src/main/resources/ resources/
 EXPOSE 8801
 
 # Define the entry point
-ENTRYPOINT ["java", "-jar", "reclamation_v1.jar"]
+ENTRYPOINT ["java", "-jar", "reclamationoffre.jar"]
