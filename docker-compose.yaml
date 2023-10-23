@@ -118,3 +118,30 @@ services:
     image: "eventt"
     depends_on:
       - Eureka
+
+  mongo_db:
+    container_name: db_container
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_db:/data/db
+
+  node_api:
+    container_name: node_container
+    build: .\backendminiprojet
+    ports:
+      - "3000:3000"
+    volumes:
+      - .\backendminiprojet:/usr/src/app
+    environment:
+      PORT: 3000
+      MONGO: mongodb://mongo_db:27017
+      DB_NAME: BNS
+    depends_on:
+      - mongo_db
+      - Eureka
+
+volumes:
+  mongo_db: {}
